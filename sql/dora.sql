@@ -1,0 +1,14 @@
+CREATE DATABASE dora;
+use dora;
+
+-- 用户表
+CREATE TABLE crash_info(
+  id BIGINT PRIMARY KEY,
+  versionName VARCHAR(16) NOT NULL,
+  versionCode INT DEFAULT 0 NOT NULL,
+  sdkVersion INT DEFAULT 0 NOT NULL,
+  release VARCHAR(16) DEFAULT 0 NOT NULL,
+  model VARCHAR(16) NOT NULL,
+  brand VARCHAR(16) NOT NULL,
+  exception VARCHAR(8192) NOT NULL
+) CHARACTER SET = utf8;

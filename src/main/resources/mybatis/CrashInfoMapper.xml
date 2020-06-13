@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dora.bugskiller.console.mapper.CrashInfoMapper">
+    <resultMap id="BaseResultMap" type="dora.bugskiller.console.pojo.CrashInfo">
+        <id column="id" property="id" />
+        <result column="versionName" property="versionName" />
+        <result column="versionCode" property="versionCode" />
+        <result column="sdkVersion" property="sdkVersion" />
+        <result column="release" property="release" />
+        <result column="model" property="model" />
+        <result column="brand" property="brand" />
+        <result column="exception" property="exception" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+		id, operationTime, operation
+	</sql>
+
+    <insert id="insert" parameterType="dora.bugskiller.console.pojo.CrashInfo">
+        INSERT INTO crash_info(id, versionName, versionCode, sdkVersion, release, model, brand, exception)
+        VALUES(#{id}, #{versionName}, #{versionCode}, #{sdkVersion}, #{release}, #{model}, #{brand}, #{exception})
+    </insert>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT * FROM crash_info
+    </select>
+</mapper>
