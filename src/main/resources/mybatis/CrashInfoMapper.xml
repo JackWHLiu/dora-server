@@ -15,7 +15,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-		id, operationTime, operation
+		id, versionName, versionCode, sdkVersion, release, model, brand, exception
 	</sql>
 
     <insert id="insert" parameterType="dora.bugskiller.console.pojo.CrashInfo">
