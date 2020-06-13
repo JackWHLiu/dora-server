@@ -1,7 +1,7 @@
 CREATE DATABASE dora;
 use dora;
 
--- 用户表
+-- 崩溃信息表
 CREATE TABLE crash_info(
   id BIGINT PRIMARY KEY,
   versionName VARCHAR(16) NOT NULL,
