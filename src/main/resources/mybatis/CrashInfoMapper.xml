@@ -11,16 +11,16 @@
         <result column="release" property="release" />
         <result column="model" property="model" />
         <result column="brand" property="brand" />
-        <result column="exception" property="exception" />
+        <result column="ex" property="ex" />
     </resultMap>
 
     <sql id="Base_Column_List">
-		id, versionName, versionCode, sdkVersion, release, model, brand, exception
+		id, versionName, versionCode, sdkVersion, release, model, brand, ex
 	</sql>
 
     <insert id="insert" parameterType="dora.bugskiller.console.pojo.CrashInfo">
-        INSERT INTO crash_info(id, versionName, versionCode, sdkVersion, release, model, brand, exception)
-        VALUES(#{id}, #{versionName}, #{versionCode}, #{sdkVersion}, #{release}, #{model}, #{brand}, #{exception})
+        INSERT INTO crash_info(id, versionName, versionCode, sdkVersion, release, model, brand, ex)
+        VALUES(#{id}, #{versionName}, #{versionCode}, #{sdkVersion}, #{release}, #{model}, #{brand}, #{ex})
     </insert>
 
     <select id="selectAll" resultMap="BaseResultMap">

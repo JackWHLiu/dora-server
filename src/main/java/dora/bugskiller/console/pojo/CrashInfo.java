@@ -22,7 +22,7 @@ public class CrashInfo {
     @ApiModelProperty("手机制造商")
     private String brand;
     @ApiModelProperty("客户端抛出的异常")
-    private String exception;
+    private String ex;
 
     public Integer getId() {
         return id;
@@ -77,10 +77,10 @@ public class CrashInfo {
     }
 
     public String getException() {
-        return exception;
+        return ex;
     }
 
     public void setException(String exception) {
-        this.exception = exception;
+        this.ex = exception;
     }
 }

@@ -10,5 +10,6 @@ public class DoraConsoleApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DoraConsoleApplication.class, args);
+        System.out.println("Dora崩溃日志收集Server已运行");
     }
 }
