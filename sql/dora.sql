@@ -7,7 +7,7 @@ CREATE TABLE crash_info(
   versionName VARCHAR(16) NOT NULL,
   versionCode INT DEFAULT 0 NOT NULL,
   sdkVersion INT DEFAULT 0 NOT NULL,
-  release VARCHAR(16) DEFAULT 0 NOT NULL,
+  androidVersion VARCHAR(16) NOT NULL,
   model VARCHAR(16) NOT NULL,
   brand VARCHAR(16) NOT NULL,
   ex VARCHAR(8192) NOT NULL

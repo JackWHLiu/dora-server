@@ -8,19 +8,19 @@
         <result column="versionName" property="versionName" />
         <result column="versionCode" property="versionCode" />
         <result column="sdkVersion" property="sdkVersion" />
-        <result column="release" property="release" />
+        <result column="androidVersion" property="androidVersion" />
         <result column="model" property="model" />
         <result column="brand" property="brand" />
         <result column="ex" property="ex" />
     </resultMap>
 
     <sql id="Base_Column_List">
-		id, versionName, versionCode, sdkVersion, release, model, brand, ex
+		id, versionName, versionCode, sdkVersion, androidVersion, model, brand, ex
 	</sql>
 
     <insert id="insert" parameterType="dora.bugskiller.console.pojo.CrashInfo">
-        INSERT INTO crash_info(id, versionName, versionCode, sdkVersion, release, model, brand, ex)
-        VALUES(#{id}, #{versionName}, #{versionCode}, #{sdkVersion}, #{release}, #{model}, #{brand}, #{ex})
+        INSERT INTO crash_info(id, versionName, versionCode, sdkVersion, androidVersion, model, brand, ex)
+        VALUES(#{id}, #{versionName}, #{versionCode}, #{sdkVersion}, #{androidVersion}, #{model}, #{brand}, #{ex})
     </insert>
 
     <select id="selectAll" resultMap="BaseResultMap">

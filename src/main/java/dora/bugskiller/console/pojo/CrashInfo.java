@@ -16,7 +16,7 @@ public class CrashInfo {
     @ApiModelProperty("SDK版本号")
     private int sdkVersion;
     @ApiModelProperty("Android版本号")
-    private String release;
+    private String androidVersion;
     @ApiModelProperty("手机型号")
     private String model;
     @ApiModelProperty("手机制造商")
@@ -52,12 +52,12 @@ public class CrashInfo {
         this.sdkVersion = sdkVersion;
     }
 
-    public String getRelease() {
-        return release;
+    public String getAndroidVersion() {
+        return androidVersion;
     }
 
-    public void setRelease(String release) {
-        this.release = release;
+    public void setAndroidVersion(String androidVersion) {
+        this.androidVersion = androidVersion;
     }
 
     public String getModel() {
