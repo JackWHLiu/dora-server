@@ -22,4 +22,4 @@ java -jar dora-console-1.0-SNAPSHOT.jar	//临时运行
 
 或
 
-nohup java -jar dora-console-1.0-SNAPSHOT.jar > system.log 2>&1 &
+nohup java -jar dora-console-1.0-SNAPSHOT.jar > system.log 2>&1 & //永久运行
