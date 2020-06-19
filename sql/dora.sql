@@ -3,7 +3,7 @@ use dora;
 
 -- 崩溃信息表
 CREATE TABLE crash_info(
-  id BIGINT PRIMARY KEY,
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
   versionName VARCHAR(16) NOT NULL,
   versionCode INT DEFAULT 0 NOT NULL,
   sdkVersion INT DEFAULT 0 NOT NULL,

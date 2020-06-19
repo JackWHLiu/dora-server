@@ -8,7 +8,6 @@ import org.apache.ibatis.type.Alias;
 @ApiModel
 public class CrashInfo {
 
-    private Integer id;
     @ApiModelProperty("版本名称")
     private String versionName;
     @ApiModelProperty("版本号")
@@ -23,10 +22,6 @@ public class CrashInfo {
     private String brand;
     @ApiModelProperty("客户端抛出的异常")
     private String ex;
-
-    public Integer getId() {
-        return id;
-    }
 
     public String getVersionName() {
         return versionName;
