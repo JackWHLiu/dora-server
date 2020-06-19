@@ -21,8 +21,13 @@ public class CrashController {
 
     @ApiOperation("保存客户端的崩溃信息")
     @RequestMapping(value = "/saveCrashInfo", method = RequestMethod.POST)
-    public void saveCrashInfo(CrashInfo crashInfo) {
-        crashService.saveCrashInfo(crashInfo);
+    public Result<String> saveCrashInfo(CrashInfo crashInfo) {
+        try {
+            crashService.saveCrashInfo(crashInfo);
+            return new ResultUtil<String>().setData("保存成功！");
+        } catch (Exception e) {
+            return new ResultUtil<String>().setErrorMsg(e.getMessage());
+        }
     }
 
     @ApiOperation("获取客户端的所有崩溃信息")

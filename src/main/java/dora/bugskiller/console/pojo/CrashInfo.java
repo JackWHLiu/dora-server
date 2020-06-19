@@ -8,7 +8,6 @@ import org.apache.ibatis.type.Alias;
 @ApiModel
 public class CrashInfo {
 
-    private int id;
     @ApiModelProperty("版本名称")
     private String versionName;
     @ApiModelProperty("版本号")
@@ -22,11 +21,7 @@ public class CrashInfo {
     @ApiModelProperty("手机制造商")
     private String brand;
     @ApiModelProperty("客户端抛出的异常")
-    private String ex;
-
-    public int getId() {
-        return id;
-    }
+    private String androidException;
 
     public String getVersionName() {
         return versionName;
@@ -76,11 +71,11 @@ public class CrashInfo {
         this.brand = brand;
     }
 
-    public String getException() {
-        return ex;
+    public String getAndroidException() {
+        return androidException;
     }
 
-    public void setException(String exception) {
-        this.ex = exception;
+    public void setAndroidException(String androidException) {
+        this.androidException = androidException;
     }
 }

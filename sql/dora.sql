@@ -10,5 +10,5 @@ CREATE TABLE crash_info(
   androidVersion VARCHAR(16) NOT NULL,
   model VARCHAR(16) NOT NULL,
   brand VARCHAR(16) NOT NULL,
-  ex VARCHAR(8192) NOT NULL
+  androidException VARCHAR(8192) NOT NULL
 ) CHARACTER SET = utf8;

@@ -4,26 +4,25 @@
 
 <mapper namespace="dora.bugskiller.console.mapper.CrashInfoMapper">
     <resultMap id="BaseResultMap" type="dora.bugskiller.console.pojo.CrashInfo">
-        <id column="id" property="id" />
         <result column="versionName" property="versionName" />
         <result column="versionCode" property="versionCode" />
         <result column="sdkVersion" property="sdkVersion" />
         <result column="androidVersion" property="androidVersion" />
         <result column="model" property="model" />
         <result column="brand" property="brand" />
-        <result column="ex" property="ex" />
+        <result column="androidException" property="androidException" />
     </resultMap>
 
     <sql id="Base_Column_List">
-		versionName, versionCode, sdkVersion, androidVersion, model, brand, ex
+		versionName, versionCode, sdkVersion, androidVersion, model, brand, androidException
 	</sql>
 
     <insert id="insert" parameterType="dora.bugskiller.console.pojo.CrashInfo">
-        INSERT INTO crash_info(versionName, versionCode, sdkVersion, androidVersion, model, brand, ex)
-        VALUES(#{versionName}, #{versionCode}, #{sdkVersion}, #{androidVersion}, #{model}, #{brand}, #{ex})
+        INSERT INTO crash_info(versionName, versionCode, sdkVersion, androidVersion, model, brand, androidException)
+        VALUES(#{versionName}, #{versionCode}, #{sdkVersion}, #{androidVersion}, #{model}, #{brand}, #{androidException})
     </insert>
 
     <select id="selectAll" resultMap="BaseResultMap">
-        SELECT * FROM crash_info
+        SELECT * FROM crash_info ORDER BY id DESC
     </select>
 </mapper>
