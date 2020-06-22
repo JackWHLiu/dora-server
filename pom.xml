@@ -8,10 +8,10 @@
         <version>2.2.4.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>dora.bugskiller.console</groupId>
-    <artifactId>dora-console</artifactId>
+    <groupId>dora.bugskiller.server</groupId>
+    <artifactId>dora-server</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>dora-console</name>
+    <name>dora-server</name>
     <description>Dora崩溃日志收集后台</description>
 
     <properties>

@@ -1,4 +1,4 @@
-package dora.bugskiller.console.swagger;
+package dora.bugskiller.server.swagger;
 
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,7 +35,7 @@ public class Swagger2Config {
        return new ApiInfoBuilder()
            .title("Dora崩溃日志收集接口文档")
            .description("提供崩溃日志CRUD的文档")
-           .termsOfServiceUrl("https://github.com/JackWHLiu/dora-console.git")
+           .termsOfServiceUrl("https://github.com/JackWHLiu/dora-server.git")
            .version("1.0")
            .build();
    }

@@ -1,4 +1,4 @@
-# dora-console
+# dora-server
 
 Dora崩溃日志后台管理系统【SpringBoot+MyBatis+MySQL】
 

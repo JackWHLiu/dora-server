@@ -9,4 +9,4 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis:
   mapper-locations: classpath:mybatis/*Mapper.xml
-  type-aliases-package: dora.bugskiller.console.pojo
+  type-aliases-package: dora.bugskiller.server.pojo

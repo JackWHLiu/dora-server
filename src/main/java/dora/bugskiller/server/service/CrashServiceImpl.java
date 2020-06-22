@@ -1,7 +1,7 @@
-package dora.bugskiller.console.service;
+package dora.bugskiller.server.service;
 
-import dora.bugskiller.console.mapper.CrashInfoMapper;
-import dora.bugskiller.console.pojo.CrashInfo;
+import dora.bugskiller.server.mapper.CrashInfoMapper;
+import dora.bugskiller.server.pojo.CrashInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,5 +21,15 @@ public class CrashServiceImpl implements CrashService {
     @Override
     public List<CrashInfo> getCrashInfos() {
         return crashInfoMapper.selectAll();
+    }
+
+    @Override
+    public CrashInfo getLatestCrashInfo() {
+        return crashInfoMapper.selectOne();
+    }
+
+    @Override
+    public void deleteCrashInfos() {
+        crashInfoMapper.deleteAll();
     }
 }

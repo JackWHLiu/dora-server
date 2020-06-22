@@ -1,4 +1,4 @@
-package dora.bugskiller.console.pojo;
+package dora.bugskiller.server.pojo;
 
 import java.io.Serializable;
 

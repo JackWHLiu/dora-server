@@ -1,6 +1,6 @@
-package dora.bugskiller.console.utils;
+package dora.bugskiller.server.utils;
 
-import dora.bugskiller.console.pojo.Result;
+import dora.bugskiller.server.pojo.Result;
 
 public class ResultUtil<T> {
 
